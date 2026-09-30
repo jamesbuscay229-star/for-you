@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>A Little Something For You 🤍</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-family: Arial, sans-serif;
+
+            color: white;
+
+            overflow: hidden;
+
+
+            background:
+
+                radial-gradient(
+                    circle at top,
+                    #342631 0%,
+                    #121015 55%,
+                    #07070a 100%
+                );
+
+        }
+
+
+        /* CARD */
+
+        .card {
+
+            width: 90%;
+
+            max-width: 420px;
+
+            padding: 45px 28px;
+
+            text-align: center;
+
+            border-radius: 30px;
+
+
+            background:
+                rgba(255,255,255,0.07);
+
+
+            border:
+                1px solid rgba(255,255,255,0.14);
+
+
+            backdrop-filter:
+                blur(15px);
+
+
+            box-shadow:
+                0 30px 80px rgba(0,0,0,0.5);
+
+
+            animation:
+                appear 1s ease;
+
+        }
+
+
+        /* ENTRY ANIMATION */
+
+        @keyframes appear {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(30px)
+                    scale(.95);
+
+            }
+
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0)
+                    scale(1);
+
+            }
+
+        }
+
+
+        /* SMALL TEXT */
+
+        .small {
+
+            font-size: 12px;
+
+            letter-spacing: 4px;
+
+            color: #aaa;
+
+            text-transform: uppercase;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        /* TITLE */
+
+        h1 {
+
+            font-size: 38px;
+
+            line-height: 1.15;
+
+            margin: 0 0 20px;
+
+        }
+
+
+        .name {
+
+            color: #efbfd0;
+
+        }
+
+
+        /* DESCRIPTION */
+
+        p {
+
+            color: #aaa;
+
+            line-height: 1.7;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        /* GIFT */
+
+        .gift {
+
+            font-size: 80px;
+
+            margin: 25px 0 30px;
+
+
+            animation:
+                floating 2s ease-in-out infinite;
+
+        }
+
+
+        @keyframes floating {
+
+            0%,
+            100% {
+
+                transform:
+                    translateY(0);
+
+            }
+
+
+            50% {
+
+                transform:
+                    translateY(-10px);
+
+            }
+
+        }
+
+
+        /* BUTTON */
+
+        .button {
+
+            display: inline-block;
+
+            padding: 14px 30px;
+
+            border-radius: 50px;
+
+
+            color: white;
+
+            text-decoration: none;
+
+
+            background:
+                rgba(255,255,255,0.09);
+
+
+            border:
+                1px solid rgba(255,255,255,0.20);
+
+
+            transition:
+                0.3s ease;
+
+        }
+
+
+        .button:hover {
+
+            transform:
+                scale(1.07);
+
+
+            background:
+                rgba(255,255,255,0.18);
+
+
+            box-shadow:
+                0 0 25px rgba(255,255,255,0.08);
+
+        }
+
+
+        .button:active {
+
+            transform:
+                scale(.96);
+
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 400px) {
+
+            h1 {
+
+                font-size: 32px;
+
+            }
+
+
+            .gift {
+
+                font-size: 70px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="card">
+
+
+        <div class="small">
+
+            just a little something
+
+        </div>
+
+
+        <h1>
+
+            Hey,
+
+            <span class="name">
+
+                HER NAME
+
+            </span>.
+
+        </h1>
+
+
+        <p>
+
+            I made something small for you.
+
+            <br>
+
+            Nothing too fancy.
+
+            <br>
+
+            Just open it. 🤍
+
+        </p>
+
+
+        <div class="gift">
+
+            🎁
+
+        </div>
+
+
+        <!-- THIS OPENS birthday.html -->
+
+        <a
+            href="birthday.html"
+            class="button"
+        >
+
+            Open this ♡
+
+        </a>
+
+
+    </div>
+
+
+</body>
+
+</html>
